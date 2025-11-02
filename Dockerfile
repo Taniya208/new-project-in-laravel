@@ -34,3 +34,7 @@ EXPOSE 80
 
 # Start Apache
 CMD ["apache2-foreground"]
+
+# Generate application key automatically
+RUN php artisan key:generate
+
